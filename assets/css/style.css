@@ -183,7 +183,7 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
     display: inline-block;
     padding: 15px 40px;
     font-weight: 600;
-
+    cursor: pointer;
 }
 .button-two {
     background: var(--color-two);
@@ -207,6 +207,18 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
     border-color: var(--color-two)
 }
 
+.button-dark {
+    background: var(--color-text);
+    color: #fff;
+    border-color: var(--color-text);
+
+}
+.button-dark:hover {
+    color: var(--color-text);
+    background: var(--color-two);
+    border-color: var(--color-two);
+
+}
 
 /* end button */
 /* section-two */
@@ -317,7 +329,7 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
 .section-three .inner-image img {
     width: 100%;
     height: auto ;
-    
+
     border-radius: 8px 8px 0 0 ;
     margin-top: -120px;
     margin-bottom: -45px;
@@ -338,3 +350,63 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
     
 }
 /* end section three  */
+
+/* box head  */
+.box-head {
+    margin-bottom: 30px;
+
+}
+.box-head .inner-sub-title{
+    color: #909090;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.box-head .inner-title {
+    font-size: 58px;
+    color: var(--color-text);
+    margin-top: 0;margin-bottom: 0;
+}
+/* end box head  */
+/* contact form */
+.contact-form {
+    padding: 80px 0 ;
+    
+}
+.contact-form .inner-wrap {
+    background: var(--bg-2);
+    padding: 60px;
+    border-radius: 8px;
+
+}
+.contact-form .inner-form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.contact-form .inner-form-wrap input, .contact-form .inner-form-wrap textarea {
+    margin-bottom: 15px;
+    border: 0;
+    /* mặc định input nó có padding 1 chút đó, có thẻ bật dev tool lên xem, 
+    thì khi mặc ddiunhj như thế mà mk muốn cho cái place holder trong input nó ra giữa giữa tí thì nhớ padding
+    */
+    padding: 10px 15px;
+    border-radius: 8px;
+    /* mấy cái input, text area thì mặc định hình như là nó có cái outline đen đen ấy, thêm outline: 0 là được */
+    outline: 0;
+}
+.contact-form .inner-form-wrap input {
+    width: 32.5%;
+    height: 50px;
+}
+.contact-form .inner-form-wrap textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.contact-form .inner-button {
+    text-align: right ;
+
+}
+/*end  contact form */
