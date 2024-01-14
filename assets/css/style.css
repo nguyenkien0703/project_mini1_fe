@@ -85,7 +85,25 @@
     color: var(--color-text)
 
 }
-
+.header .inner-icon-mobi {
+    display: none;
+}
+@media(max-width: 991.98px) {
+    .header {
+        padding: 15px 20px;
+    }
+    .header .inner-icon-mobi {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .header .inner-menu {
+        display: none;
+    }
+    .header .inner-social {
+        display: none;
+    }
+}
 /* end header */
 /* section one */
 .section-one {
@@ -145,6 +163,12 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
 }
 .section-one .button {
     margin-right: 10px ;
+    margin-bottom: 10px;
+}
+@media (max-width: 767.98px) {
+    .section-one .inner-wrap {
+        text-align: center;
+    }
 }
 /*end  section one */
 /* button */
@@ -205,7 +229,10 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
     border-radius: 8px;
 }
 
-.section-two .inner-wrap {
+.section-two .inner-wrap .inner-content  {
+    /* nghĩa là giả sử có 1 khối cha, trong đó có 2 khối con, khối con thứ nhất chiếm 40% rồi, thì mình set cho khối conthuws hai là flex: 1
+        nghĩa là nó chiếm hết phần còn lại
+    */
     flex: 1;
 
 }
@@ -221,6 +248,7 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
 }
 .section-two .inner-wrap .inner-list {
     display: flex;
+    flex-wrap: wrap;
 }
 .section-two .inner-wrap .inner-list .inner-item {
     display: flex;
@@ -232,6 +260,7 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 20px;
     
 
 }
@@ -244,4 +273,26 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
     font-weight: 600;
 }
 
+@media (max-width: 991.98px ) {
+    .section-two .inner-wrap {
+        flex-wrap: wrap;
+    }
+    .section-two .inner-wrap .inner-image {
+        width: 100%;
+    }
+    .section-two .inner-wrap .inner-content {
+        width: 100%;
+        /* do lucs nayx m để flex:1 nên bay giờ response thì phải cho flex : none,  */
+        flex: none
+    }
+
+}
+@media (max-width: 767.98px ) {
+    .section-two .inner-wrap .inner-content {
+        text-align: center;
+    }
+    .section-two .inner-wrap .inner-title {
+        font-size: 40px;
+    }
+}
 /* end section-two */
