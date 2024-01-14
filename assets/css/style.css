@@ -317,7 +317,10 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
 .section-three .inner-image img {
     width: 100%;
     height: auto ;
-    border-radius: 8px;
+    
+    border-radius: 8px 8px 0 0 ;
+    margin-top: -120px;
+    margin-bottom: -45px;
 
 }
 .section-three .inner-content {
