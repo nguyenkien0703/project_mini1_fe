@@ -61,6 +61,7 @@
 }
 
 .header .inner-social ul li a {
+    /* ví dụ thực tế ở đay là dùng đẻ căn chỉnh chữ home bên trong thẻ a, ví dụ v  */
     /* cach can chinh van ban ben trong the html */
     /* cach 1, text-align la dung de can chinh van ban ben trong html, 
     con align-item la dung de can chinh phan tu con ben trong 1 container
