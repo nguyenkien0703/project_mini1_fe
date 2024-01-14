@@ -185,3 +185,63 @@ lớp mờ mờ của section-one::before kia nó lại bì đè lên, thì k th
 
 
 /* end button */
+/* section-two */
+.section-two {
+    /* padding trên 80 trái phải 0 dưới 50 */
+    padding: 80px 0 50px;
+    background: var(--bg-1);   
+}
+.section-two .inner-wrap {
+    display: flex;
+    align-items: center;
+}
+.section-two .inner-wrap .inner-image {
+   width: 40%;
+   margin-right: 5%;
+}
+.section-two .inner-wrap .inner-image img {
+    width: 100%;
+    height: auto ;
+    border-radius: 8px;
+}
+
+.section-two .inner-wrap {
+    flex: 1;
+
+}
+.section-two .inner-wrap .inner-sub-title {
+    color: #777782;
+    font-size: 20px;
+
+}
+.section-two .inner-wrap .inner-title {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.section-two .inner-wrap .inner-list {
+    display: flex;
+}
+.section-two .inner-wrap .inner-list .inner-item {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 140px;
+    height: 140px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    
+
+}
+.section-two .inner-wrap .inner-list .inner-item  i {
+    font-size: 32px;
+    color: var(--color-one);
+    margin-bottom: 10px;
+}
+.section-two .inner-wrap .inner-list .inner-item span {
+    font-weight: 600;
+}
+
+/* end section-two */
